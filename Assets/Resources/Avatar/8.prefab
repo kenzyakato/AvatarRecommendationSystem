@@ -304,6 +304,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -757,6 +758,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2227,6 +2229,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2603,7 +2606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2172238852311295517}
   m_LocalRotation: {x: 0.0005411252, y: -0.000004071057, z: -0.008741063, w: 0.99996173}
-  m_LocalPosition: {x: 0.0000000047683715, y: -0.024099534, z: 0.00000002503395}
+  m_LocalPosition: {x: 0.0000000047683715, y: -0.02409954, z: 0.00000002503395}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Children:
   - {fileID: 716688953538849696}
@@ -2704,7 +2707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2235494504554877753}
   m_LocalRotation: {x: 0.9947666, y: 0.00041845717, z: 0.00006445175, w: -0.10217264}
-  m_LocalPosition: {x: 0.13169807, y: 0.084256865, z: 0.021347327}
+  m_LocalPosition: {x: 0.13169806, y: 0.084256865, z: 0.021347327}
   m_LocalScale: {x: 1, y: 0.9999998, z: 1.0000031}
   m_Children:
   - {fileID: 2963726704374518328}
@@ -2918,6 +2921,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3670,6 +3674,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4177,7 +4182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3595274864117446706}
-  m_LocalRotation: {x: 0.5493374, y: 0.5768356, z: -0.4315512, w: 0.42338258}
+  m_LocalRotation: {x: 0.5493373, y: 0.5768356, z: -0.43155116, w: 0.42338264}
   m_LocalPosition: {x: 0.07619936, y: 0.18680699, z: -0.001940043}
   m_LocalScale: {x: 1, y: 1, z: 0.9999999}
   m_Children:
@@ -5310,7 +5315,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4733864246032770874}
-  m_LocalRotation: {x: 0.000036862228, y: -0.00043564104, z: -0.02741627, w: 0.999624}
+  m_LocalRotation: {x: 0.00003686231, y: -0.00043564106, z: -0.027416458, w: 0.999624}
   m_LocalPosition: {x: -0.000000014305114, y: 0.24163301, z: -0.000000024437904}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -5424,6 +5429,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5688,6 +5694,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6776,7 +6783,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5672982610758723294}
-  m_LocalRotation: {x: 0.000036940095, y: 0.00043507697, z: 0.027415521, w: 0.9996241}
+  m_LocalRotation: {x: 0.00003703625, y: 0.00043516804, z: 0.027415521, w: 0.9996241}
   m_LocalPosition: {x: 0.000000014305114, y: 0.24163301, z: -0.000000024437904}
   m_LocalScale: {x: 1, y: 0.9999999, z: 0.99999994}
   m_Children:
@@ -7591,6 +7598,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8122,6 +8130,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8905,8 +8914,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6199237944337805065}
   - component: {fileID: 65358012983637363}
-  - component: {fileID: 5873440953028791614}
-  - component: {fileID: 5873440953028791609}
   m_Layer: 0
   m_Name: 8
   m_TagString: Untagged
@@ -8957,7 +8964,7 @@ Animator:
   m_GameObject: {fileID: 6720442376433759667}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e326ada76aa357a4db53f687d254f0b3, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e37c146771db9d64d809511f4f25ee12, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -8966,452 +8973,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5873440953028791614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6720442376433759667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 542108242, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 
-  ViewPosition: {x: 0, y: 1.3553, z: 0.0512}
-  Animations: 0
-  ScaleIPD: 1
-  lipSync: 3
-  lipSyncJawBone: {fileID: 0}
-  lipSyncJawClosed: {x: 0, y: 0, z: 0, w: 1}
-  lipSyncJawOpen: {x: 0, y: 0, z: 0, w: 1}
-  VisemeSkinnedMesh: {fileID: 1067408488611516883}
-  MouthOpenBlendShapeName: Facial_Blends.Jaw_Down
-  VisemeBlendShapes:
-  - vrc.v_sil
-  - vrc.v_PP
-  - vrc.v_FF
-  - vrc.v_TH
-  - vrc.v_DD
-  - vrc.v_kk
-  - vrc.v_CH
-  - vrc.v_SS
-  - vrc.v_nn
-  - vrc.v_RR
-  - vrc.v_aa
-  - vrc.v_E
-  - vrc.v_ih
-  - vrc.v_oh
-  - vrc.v_ou
-  unityVersion: 2019.4.31f1
-  portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
-  portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-  customExpressions: 1
-  expressionsMenu: {fileID: 11400000, guid: 0b23dd687ae19f041ada83a19e77a23d, type: 2}
-  expressionParameters: {fileID: 11400000, guid: 62f98657c1236234bb695b891334447a,
-    type: 2}
-  enableEyeLook: 1
-  customEyeLookSettings:
-    eyeMovement:
-      confidence: 0.6
-      excitement: 0.4
-    leftEye: {fileID: 3848771398381158347}
-    rightEye: {fileID: 2249057169212275196}
-    eyesLookingStraight:
-      linked: 1
-      left: {x: -0.008726535, y: 0, z: 0, w: 0.9999619}
-      right: {x: -0.008726535, y: 0, z: 0, w: 0.9999619}
-    eyesLookingUp:
-      linked: 1
-      left: {x: -0.043619387, y: 0, z: 0, w: 0.99904823}
-      right: {x: -0.043619387, y: 0, z: 0, w: 0.99904823}
-    eyesLookingDown:
-      linked: 1
-      left: {x: 0.034899496, y: 0, z: 0, w: 0.99939084}
-      right: {x: 0.034899496, y: 0, z: 0, w: 0.99939084}
-    eyesLookingLeft:
-      linked: 1
-      left: {x: -0.013077138, y: -0.04361565, z: -0.00057096017, w: 0.99896264}
-      right: {x: -0.013077138, y: -0.04361565, z: -0.00057096017, w: 0.99896264}
-    eyesLookingRight:
-      linked: 1
-      left: {x: -0.013077138, y: 0.04361598, z: 0.0005709645, w: 0.99896264}
-      right: {x: -0.013077138, y: 0.04361598, z: 0.0005709645, w: 0.99896264}
-    eyelidType: 2
-    upperLeftEyelid: {fileID: 0}
-    upperRightEyelid: {fileID: 0}
-    lowerLeftEyelid: {fileID: 0}
-    lowerRightEyelid: {fileID: 0}
-    eyelidsDefault:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsClosed:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsLookingUp:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsLookingDown:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsSkinnedMesh: {fileID: 1067408488611516883}
-    eyelidsBlendshapes: 0f0000001000000011000000
-  customizeAnimationLayers: 1
-  baseAnimationLayers:
-  - isEnabled: 0
-    type: 0
-    animatorController: {fileID: 9100000, guid: 54357b8913aea8d48840d1b195b30453,
-      type: 2}
-    mask: {fileID: 0}
-    isDefault: 0
-  - isEnabled: 0
-    type: 2
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 3
-    animatorController: {fileID: 9100000, guid: a01bbb5f7d34d664b8e9c699ad272789,
-      type: 2}
-    mask: {fileID: 31900000, guid: b2b8bad9583e56a46a3e21795e96ad92, type: 2}
-    isDefault: 0
-  - isEnabled: 0
-    type: 4
-    animatorController: {fileID: 9100000, guid: 01b6a5596f2a42e44aa79152de0cd183,
-      type: 2}
-    mask: {fileID: 0}
-    isDefault: 0
-  - isEnabled: 0
-    type: 5
-    animatorController: {fileID: 9100000, guid: 7fe51151ff742e84a86fb3426e062161,
-      type: 2}
-    mask: {fileID: 0}
-    isDefault: 0
-  specialAnimationLayers:
-  - isEnabled: 0
-    type: 6
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 7
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 8
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  AnimationPreset: {fileID: 0}
-  animationHashSet:
-  - hash: 1127303507
-    name: Prone
-  - hash: -510014593
-    name: Standing
-  - hash: 1277114970
-    name: Crouching
-  - hash: -2137589102
-    name: JumpAndFall.Short Fall
-  - hash: 2014011911
-    name: JumpAndFall.LongFall
-  - hash: 196538068
-    name: JumpAndFall.SmallHop
-  - hash: 1684628531
-    name: Peace 4
-  - hash: -2073524051
-    name: Point 3
-  - hash: 1680867892
-    name: Gun 6
-  - hash: -1372854853
-    name: Open 2
-  - hash: 1916925603
-    name: Idle 0
-  - hash: 421412575
-    name: Fist 1
-  - hash: 747744187
-    name: Thumbs up 7
-  - hash: -148889293
-    name: RockNRoll 5
-  - hash: 515746039
-    name: Fist 1
-  - hash: -1311079487
-    name: Point 3
-  - hash: -1450675309
-    name: Open 2
-  - hash: 1373335391
-    name: Peace 4
-  - hash: 180719216
-    name: RockNRoll 5
-  - hash: -1436404944
-    name: Gun 6
-  - hash: -780925704
-    name: Thumbs up 7
-  - hash: 1977770123
-    name: Idle 0
-  - hash: -1265555420
-    name: Emote8
-  - hash: 607008181
-    name: Emote7
-  - hash: 1395197219
-    name: Emote6
-  - hash: -903850855
-    name: Emote5
-  - hash: -1121491953
-    name: Emote4
-  - hash: 591655340
-    name: Emote3
-  - hash: 1413792058
-    name: Emote2
-  - hash: -850554752
-    name: Emote1
-  - hash: 962413785
-    name: seated_raise_hand-hold
-  - hash: -710796399
-    name: vrc2_seated_point
-  - hash: 1083353907
-    name: vrc2_seated_laugh
-  - hash: -618450521
-    name: vrc2_seated_drum-loop
-  - hash: 172075476
-    name: vrc2_seated_disbelief
-  - hash: 1774229777
-    name: vrc2_seated_disapprove
-  - hash: 1244035295
-    name: seated_clap-loop
-  - hash: -604667415
-    name: seated_shake_fist
-  - hash: 711312144
-    name: BlendOut Stand
-  - hash: 1242512264
-    name: Prepare Standing
-  - hash: -1439543933
-    name: WaitForActionOrAFK
-  - hash: 1745884183
-    name: AFK
-  - hash: 1323262204
-    name: BlendOut
-  - hash: 877246816
-    name: Afk Init
-  - hash: 1056010405
-    name: Restore Tracking (stand)
-  - hash: -916604327
-    name: Prepare Sitting
-  - hash: 527979128
-    name: BlendOut Sit
-  - hash: 378145609
-    name: Restore Tracking (sit)
-  - hash: -741837223
-    name: Sit
-  - hash: 1054765410
-    name: Default
-  - hash: 1972156917
-    name: Peace 4
-  - hash: -1785899669
-    name: Point 3
-  - hash: -1134177608
-    name: Gun 6
-  - hash: 1258127200
-    name: Open 2
-  - hash: -1722976033
-    name: "Idle\u3000\uFF10"
-  - hash: -37182460
-    name: Fist 1
-  - hash: -1285579943
-    name: Thumbs up 7
-  - hash: 1760432593
-    name: RockNRoll 5
-  - hash: -1271451634
-    name: Fist 1
-  - hash: 1964065761
-    name: Point 3
-  - hash: 50522986
-    name: Open 2
-  - hash: -1794068609
-    name: Peace 4
-  - hash: -1889550558
-    name: RockNRoll 5
-  - hash: 716608862
-    name: Gun 6
-  - hash: 1424897450
-    name: Thumbs up 7
-  - hash: -546768782
-    name: Idle 0
-  - hash: -942880601
-    name: TrackingEyeOn
-  - hash: -159425685
-    name: TrackingEyeOff
-  - hash: 1429901217
-    name: Sit
-  - hash: 1738282178
-    name: Restore Tracking (sit)
-  - hash: -377823058
-    name: BlendOut Sit
-  - hash: 2024037947
-    name: Prepare Sitting
-  - hash: 1804488134
-    name: Restore Tracking (stand)
-  - hash: 1828348834
-    name: Afk Init
-  - hash: 376224318
-    name: BlendOut
-  - hash: -287117841
-    name: AFK
-  - hash: 521285164
-    name: WaitForActionOrAFK
-  - hash: -385695208
-    name: Prepare Standing
-  - hash: 1674318040
-    name: getup_from_back 8
-  - hash: -664238805
-    name: BlendOut Stand
-  - hash: 1211637048
-    name: seated_shake_fist 6
-  - hash: -237736310
-    name: seated_clap-loop 2
-  - hash: -476721407
-    name: vrc2_seated_disapprove 7
-  - hash: -870657182
-    name: vrc2_seated_disbelief 8
-  - hash: 1215123454
-    name: vrc2_seated_drum-loop 5
-  - hash: 1982920639
-    name: vrc2_seated_laugh 1
-  - hash: -814846396
-    name: vrc2_seated_point 3
-  - hash: -2116207351
-    name: seated_raise_hand-hold 4
-  - hash: 280211977
-    name: stand_wave 1
-  - hash: 1024314427
-    name: stand_clap_loop 2
-  - hash: -428935075
-    name: stand_point 3
-  - hash: 2092664922
-    name: stand_cheer_loop 4
-  - hash: -1647537383
-    name: dance_loop 5
-  - hash: -1917025596
-    name: backflip 6
-  - hash: 623289033
-    name: sadkick 7
-  - hash: 400168292
-    name: die_hold 8
-  - hash: 67824131
-    name: Jacket_ON
-  - hash: 476699248
-    name: Jacket_OFF
-  - hash: 703724137
-    name: Hoodie_ON
-  - hash: -1323063002
-    name: Hoodie_OFF
-  - hash: -316195872
-    name: Bag_ON
-  - hash: 629359715
-    name: Bag_OFF
-  - hash: -1608557175
-    name: Hair_Belt_OFF
-  - hash: 336464306
-    name: Hair_Belt_ON
-  - hash: -758705010
-    name: Shorts_ON
-  - hash: -1883838445
-    name: Shorts_OFF
-  - hash: 313387796
-    name: Tights_ON
-  - hash: -1616054090
-    name: Tights_OFF
-  - hash: -534551104
-    name: Shoes_OFF
-  - hash: -146987432
-    name: Shoes_ON
-  - hash: -883288319
-    name: Empty
-  - hash: -1881232880
-    name: Surprise
-  - hash: -1592317494
-    name: Smile
-  - hash: 800377061
-    name: Gunu
-  - hash: 1307455040
-    name: Eye_close
-  - hash: -227371805
-    name: Hand Facial LOCK
-  - hash: 1666976860
-    name: Angry
-  - hash: -1868630003
-    name: Wink
-  - hash: 1996280475
-    name: Sorrow
-  - hash: 1838042842
-    name: Blush
-  - hash: 1143505265
-    name: Empty
-  - hash: -1042525867
-    name: Pale
-  - hash: 1762572433
-    name: Hair_left
-  - hash: -370590287
-    name: Empty
-  - hash: 1891129075
-    name: Hair_right
-  - hash: -254150530
-    name: Hair_long
-  - hash: 290386575
-    name: Empty
-  - hash: 2067229602
-    name: Hair_short
-  - hash: 714171226
-    name: Hair_Transparency
-  - hash: -1346983921
-    name: Jacket_ON
-  - hash: -727947112
-    name: Empty
-  autoFootsteps: 1
-  autoLocomotion: 1
---- !u!114 &5873440953028791609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6720442376433759667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1427037861, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchedFromSDKPipeline: 0
-  completedSDKPipeline: 0
-  blueprintId: 
-  contentType: 0
-  assetBundleUnityVersion: 
-  fallbackStatus: 0
 --- !u!1 &6782202015187575202
 GameObject:
   m_ObjectHideFlags: 0
@@ -9458,6 +9019,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10380,6 +9942,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11668,6 +11231,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11930,6 +11494,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12171,7 +11736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8314174303071569259}
   m_LocalRotation: {x: 0.99476683, y: 0.00031598614, z: 0.000048653877, w: -0.102171026}
-  m_LocalPosition: {x: 0.06801324, y: 0.22104247, z: -0.11229544}
+  m_LocalPosition: {x: 0.068013236, y: 0.22104247, z: -0.11229544}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 0.99999374}
   m_Children:
   - {fileID: 2113632628628497687}
@@ -12396,6 +11961,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12797,6 +12363,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13030,6 +12597,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13386,6 +12954,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

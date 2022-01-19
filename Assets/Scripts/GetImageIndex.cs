@@ -13,7 +13,7 @@ public class GetImageIndex : MonoBehaviour
 {
     public int[] imageIndex = new int[16];
     public UnityCallPython getImage;
-    public ButtonDown[] getNewImage = new ButtonDown[16];
+    public ButtonDownX[] getNewImage = new ButtonDownX[16];
     public string imageID;
     public string imagTag;
     public Button avatarButton;
@@ -73,6 +73,7 @@ public class GetImageIndex : MonoBehaviour
     }
     public void ChangeButton()
     {
+
         int i = 0;
         for ( i = 0; i < 16; i++)
         {

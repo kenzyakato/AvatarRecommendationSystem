@@ -230,6 +230,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -514,6 +515,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -940,6 +942,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1292,6 +1295,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1456,6 +1460,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2169,6 +2174,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2639,6 +2645,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2834,6 +2841,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3671,6 +3679,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3830,8 +3839,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1830589048554317332}
   - component: {fileID: 1830589048554317339}
-  - component: {fileID: 1830589048554317341}
-  - component: {fileID: 1830589048554317342}
   - component: {fileID: 1830589048554317343}
   - component: {fileID: 1830589048554317336}
   m_Layer: 0
@@ -3875,7 +3882,7 @@ Animator:
   m_GameObject: {fileID: 1830589048554317347}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4ea5e17ee08441247a6fea471fc020fa, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e37c146771db9d64d809511f4f25ee12, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3884,288 +3891,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1830589048554317341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830589048554317347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1427037861, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchedFromSDKPipeline: 0
-  completedSDKPipeline: 0
-  blueprintId: 
-  contentType: 0
-  assetBundleUnityVersion: 
-  fallbackStatus: 1
---- !u!114 &1830589048554317342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830589048554317347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 542108242, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 
-  ViewPosition: {x: 0, y: 0.8, z: 0.08}
-  Animations: 0
-  ScaleIPD: 1
-  lipSync: 3
-  lipSyncJawBone: {fileID: 0}
-  lipSyncJawClosed: {x: 0, y: 0, z: 0, w: 1}
-  lipSyncJawOpen: {x: 0, y: 0, z: 0, w: 1}
-  VisemeSkinnedMesh: {fileID: 1830589048554317340}
-  MouthOpenBlendShapeName: Facial_Blends.Jaw_Down
-  VisemeBlendShapes:
-  - vrc.v_sil
-  - vrc.v_pp
-  - vrc.v_ff
-  - vrc.v_th
-  - vrc.v_dd
-  - vrc.v_kk
-  - vrc.v_ch
-  - vrc.v_ss
-  - vrc.v_nn
-  - vrc.v_rr
-  - vrc.v_aa
-  - vrc.v_e
-  - vrc.v_ih
-  - vrc.v_oh
-  - vrc.v_ou
-  unityVersion: 2019.4.31f1
-  portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
-  portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-  customExpressions: 1
-  expressionsMenu: {fileID: 11400000, guid: 2d072f344c95f7144889866c2b1a1b0b, type: 2}
-  expressionParameters: {fileID: 11400000, guid: 747d2bbcc60fab2489771a1906357a2b,
-    type: 2}
-  enableEyeLook: 1
-  customEyeLookSettings:
-    eyeMovement:
-      confidence: 0.5
-      excitement: 0.5
-    leftEye: {fileID: 1830589047595036555}
-    rightEye: {fileID: 1830589047235286969}
-    eyesLookingStraight:
-      linked: 1
-      left: {x: 0, y: 0, z: 0, w: 1}
-      right: {x: 0, y: 0, z: 0, w: 1}
-    eyesLookingUp:
-      linked: 1
-      left: {x: -0.18924466, y: 0, z: 0, w: 0.98192996}
-      right: {x: -0.18924466, y: 0, z: 0, w: 0.98192996}
-    eyesLookingDown:
-      linked: 1
-      left: {x: 0.12036035, y: 0, z: 0, w: 0.99273026}
-      right: {x: 0.12036035, y: 0, z: 0, w: 0.99273026}
-    eyesLookingLeft:
-      linked: 1
-      left: {x: 0, y: -0.17364818, z: 0, w: 0.9848077}
-      right: {x: 0, y: -0.17364818, z: 0, w: 0.9848077}
-    eyesLookingRight:
-      linked: 1
-      left: {x: 0, y: 0.17364827, z: 0, w: 0.9848077}
-      right: {x: 0, y: 0.17364827, z: 0, w: 0.9848077}
-    eyelidType: 2
-    upperLeftEyelid: {fileID: 0}
-    upperRightEyelid: {fileID: 0}
-    lowerLeftEyelid: {fileID: 0}
-    lowerRightEyelid: {fileID: 0}
-    eyelidsDefault:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsClosed:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsLookingUp:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsLookingDown:
-      upper:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-      lower:
-        linked: 1
-        left: {x: 0, y: 0, z: 0, w: 0}
-        right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsSkinnedMesh: {fileID: 1830589048554317340}
-    eyelidsBlendshapes: 33000000ffffffffffffffff
-  customizeAnimationLayers: 1
-  baseAnimationLayers:
-  - isEnabled: 0
-    type: 0
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 2
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 3
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 4
-    animatorController: {fileID: 9100000, guid: 07372c6ab44376f4f81143e916b4a8f4,
-      type: 2}
-    mask: {fileID: 0}
-    isDefault: 0
-  - isEnabled: 0
-    type: 5
-    animatorController: {fileID: 9100000, guid: 7a17af3f1331b1a4f9cc3444e564ab68,
-      type: 2}
-    mask: {fileID: 0}
-    isDefault: 0
-  specialAnimationLayers:
-  - isEnabled: 0
-    type: 6
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 7
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  - isEnabled: 0
-    type: 8
-    animatorController: {fileID: 0}
-    mask: {fileID: 0}
-    isDefault: 1
-  AnimationPreset: {fileID: 0}
-  animationHashSet:
-  - hash: 1267987864
-    name: die_hold
-  - hash: -1487177324
-    name: sadkick
-  - hash: -1176525199
-    name: backflip
-  - hash: 527264872
-    name: dance_loop
-  - hash: 2085203268
-    name: stand_cheer_loop
-  - hash: 390180112
-    name: stand_point
-  - hash: -306760433
-    name: stand_clap_loop
-  - hash: 884531561
-    name: stand_wave
-  - hash: 962413785
-    name: seated_raise_hand-hold
-  - hash: -710796399
-    name: vrc2_seated_point
-  - hash: 1083353907
-    name: vrc2_seated_laugh
-  - hash: -618450521
-    name: vrc2_seated_drum-loop
-  - hash: 172075476
-    name: vrc2_seated_disbelief
-  - hash: 1774229777
-    name: vrc2_seated_disapprove
-  - hash: 1244035295
-    name: seated_clap-loop
-  - hash: -604667415
-    name: seated_shake_fist
-  - hash: 711312144
-    name: BlendOut Stand
-  - hash: 316221916
-    name: getup_from_back
-  - hash: 1242512264
-    name: Prepare Standing
-  - hash: -1439543933
-    name: WaitForActionOrAFK
-  - hash: 1745884183
-    name: AFK
-  - hash: 1323262204
-    name: BlendOut
-  - hash: 877246816
-    name: Afk Init
-  - hash: 1056010405
-    name: Restore Tracking (stand)
-  - hash: -916604327
-    name: Prepare Sitting
-  - hash: 527979128
-    name: BlendOut Sit
-  - hash: 378145609
-    name: Restore Tracking (sit)
-  - hash: -741837223
-    name: Sit
-  - hash: -375363760
-    name: Fist
-  - hash: -2051061064
-    name: Point
-  - hash: 1722154120
-    name: Open
-  - hash: 990881243
-    name: Peace
-  - hash: -468094953
-    name: RockNRoll
-  - hash: 1209749223
-    name: Gun
-  - hash: -1477869671
-    name: Thumbs up
-  - hash: 519162425
-    name: Idle
-  - hash: 1928344017
-    name: Peace
-  - hash: -868163918
-    name: Point
-  - hash: -1829493075
-    name: Gun
-  - hash: -260654226
-    name: Open
-  - hash: -2011001377
-    name: Idle
-  - hash: 2138251446
-    name: Fist
-  - hash: -1368749161
-    name: Thumbs up
-  - hash: -308640743
-    name: RockNRoll
-  - hash: 886354274
-    name: boots_ON
-  - hash: 653022693
-    name: boots_OFF
-  - hash: 933749710
-    name: uwagi_ON
-  - hash: -108017292
-    name: uwagi_OFF
-  - hash: 1774006451
-    name: belt_ON
-  - hash: -681189850
-    name: belt_OFF
-  autoFootsteps: 1
-  autoLocomotion: 1
 --- !u!114 &1830589048554317343
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -36,10 +36,10 @@ for i in range(19):#获取所有标签和向量位数
 		
 
 	for line in lines:
-		line = line.split("：" )
-		l = line[1].strip('\n').strip(' ')
-		if l not in vectorindex :
-			vectorindex.append(l)
+		line = line.strip('\n')
+	
+		if line not in vectorindex :
+			vectorindex.append(line)
 			labelvector.append(0)
 #print(i)
 #print(label)
@@ -52,10 +52,9 @@ for i in range(19):#储存每一个图片和对应向量
 		
 	lines = f.readlines()
 	for line in lines:
-		line = line.split("：" )
-		l = line[1].strip('\n').strip(' ')
-		if l in vectorindex :
-			j=vectorindex.index(l)
+		line = line.strip('\n')
+		if line in vectorindex :
+			j=vectorindex.index(line)
 			label[j]=label[j]+1
 	allLabels[i]=label
 	#i = i + 1
@@ -63,35 +62,36 @@ for i in range(19):#储存每一个图片和对应向量
 #print(allLabels)
 def readLabels(imageN):
 	labels=[]
-	f = open (labelpath+str(imageN)+'.txt','r', encoding="utf-8")
+	f = open (labelpath+str(imageN)+'.txt','r',encoding="utf-8")#, encoding="unicode_escape"
 	lines = f.readlines()
 	for line in lines:
 		#line=line.strip('\n')
-		line = line.split("：" )
-		l = line[1].strip('\n').strip(' ')
-		labels.append(l)
+		line = line.strip('\n')
+		labels.append(line)
 	return labels
 def getsimilar(vector):
 	a = list(allLabels.values())
 	mindist=[]
 	for i in a :
 		b=np.array(vector)
+		#print(i)
+		#print(b)
 		dist = np.linalg.norm(i - b)
 
 		mindist.append(dist)
 	import heapq
-	max_number = heapq.nlargest(19,mindist)
-	min_number = heapq.nsmallest(19, mindist) 
+	max_number = heapq.nlargest(5,mindist)
+	min_number = heapq.nsmallest(16, mindist) 
 	#print(min_number)
 	min_index = []
 	for t in min_number:
 	    index = mindist.index(t)
 	    min_index.append(index)
 	    mindist[index] = 0
-	for t in max_number:
+	'''for t in max_number:
 	    index = mindist.index(t)
 	    min_index.append(index)
-	    mindist[index] = 0
+	    mindist[index] = 0'''
 	random.shuffle (min_index)
 	#print(min_number)
 	#print(min_index)

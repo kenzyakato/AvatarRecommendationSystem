@@ -64,13 +64,13 @@ def reset():
 	print(allLabels)
 	'''
 	for i in range(19):#获取所有标签和向量位数 1419
-		f = open (labelpath+str(i)+'.txt','r', encoding="unicode_escape")#,encoding="utf-8"
+		f = open (labelpath+str(i)+'.txt','r',encoding="utf-8")#,encoding="utf-8"
 		i = i + 1
 		lines = f.readlines()
 		
 
 		for line in lines:
-			#line = line.split("：" )
+			line = line.strip('\n')
 			#l = line[1].strip('\n').strip(' ')
 			if line not in vectorindex :
 				vectorindex.append(line)
@@ -89,6 +89,6 @@ def reset():
 	"""for i in image_list:
 		print(i)"""
 	print (image_list)
-	#print (allLabels)
+	#print (vectorindex)
 
 reset()

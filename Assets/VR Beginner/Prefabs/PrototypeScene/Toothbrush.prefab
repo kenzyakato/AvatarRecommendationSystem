@@ -1,19 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4547729963114285399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3290197904000035305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d19801c6a74ab64a92ce5ef0a355ade, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementShakeStrength: 0.005
-  RotationShakeStrength: 2
 --- !u!1 &6811919396552750374
 GameObject:
   m_ObjectHideFlags: 0
@@ -83,6 +69,9 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
@@ -94,6 +83,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
   m_SelectEntered:
@@ -183,6 +178,7 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 0.25
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
 --- !u!1 &8370721266674984517
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,3 +438,17 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6811919397434126560}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4547729963114285399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3290197904000035305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d19801c6a74ab64a92ce5ef0a355ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementShakeStrength: 0.005
+  RotationShakeStrength: 2

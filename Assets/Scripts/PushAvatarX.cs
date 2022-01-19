@@ -26,7 +26,10 @@ public class PushAvatarX : MonoBehaviour
         
         imageID = ButtonDownX.avatarID;
         string fname = "Avatar/" +imageID.ToString();
+        Debug.Log(fname);
         avatar = Instantiate((GameObject)Resources.Load(fname));
         avatar.transform.position = this.transform.position;
+        avatar.transform.rotation = this.transform.rotation;
+        
     }
 }

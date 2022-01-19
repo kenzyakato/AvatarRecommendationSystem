@@ -11,6 +11,9 @@ public class ButtonDownX : MonoBehaviour
     public string result;
     public static int avatarID;
     private string basePath;
+    public static int buttonTimes = 0;
+    public static string buttonName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,19 @@ public class ButtonDownX : MonoBehaviour
     }
     public void CallPythonResult()
     {
-        CallPythonAddHW(basePath + pythonScript, SendID());
+        SendID();
+        if(buttonName != gameObject.name){
+            buttonName = gameObject.name;
+            
+        }
+        else
+        {
+            CallPythonAddHW(basePath + pythonScript, SendID());
+            buttonTimes = 0;
+        }
+        
+        
+        
     }
     void CallPythonHW(string pyScriptPath)
     {
@@ -87,6 +102,7 @@ public class ButtonDownX : MonoBehaviour
     }
     public int SendID()
     {
+        
         avatarID = getImageIndex.imageIndex[int.Parse(gameObject.name)];
         return avatarID;
     }

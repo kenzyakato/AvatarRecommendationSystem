@@ -69,6 +69,9 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
@@ -80,6 +83,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
   m_SelectEntered:
@@ -169,6 +178,7 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 0.25
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
 --- !u!1 &2449246404323954345
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,21 +385,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1259461224847024700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9051260724846423397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22f7c9fb5a73b074d851ca15e445fdc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Acceleration: 500
-  Deceleration: 300
-  MaxSpeed: 1000
 --- !u!1001 &6270041855641006705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,3 +476,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6270041855641006705}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259461224847024700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051260724846423397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f7c9fb5a73b074d851ca15e445fdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Acceleration: 500
+  Deceleration: 300
+  MaxSpeed: 1000
