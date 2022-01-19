@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: julia_ExpressionsMenu_1
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Change_Clothes
+    icon: {fileID: 2800000, guid: 2f0156be9227d4c458ef90690a0296b8, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 0c1b1763a69feb74c837ef266a5055c2, type: 2}
+    subParameters: []
+    labels: []
+  - name: Oppia_Size
+    icon: {fileID: 2800000, guid: 785d0feefadf8ba48a439538760b7bb0, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Oppai_H
+    labels: []
+  - name: BAG
+    icon: {fileID: 2800000, guid: 663b957353beeab44bc4f764d30fb4e9, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 2c37ec40ae9fe6c49b530b84155bb828, type: 2}
+    subParameters: []
+    labels: []

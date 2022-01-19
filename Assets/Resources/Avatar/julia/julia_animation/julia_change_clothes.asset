@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: julia_change_clothes
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Coat
+    icon: {fileID: 2800000, guid: 9a7f4b2f65766a64ca3ae416e90f901f, type: 3}
+    type: 102
+    parameter:
+      name: Coat_toggle
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Grasses
+    icon: {fileID: 2800000, guid: 61f9bfc470ff9b140acd67fef1a328f2, type: 3}
+    type: 102
+    parameter:
+      name: Grasses_toggle
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Hat
+    icon: {fileID: 2800000, guid: 5d7426dac7b739a4fb8b5e3c815627f9, type: 3}
+    type: 102
+    parameter:
+      name: Hat_toggle
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

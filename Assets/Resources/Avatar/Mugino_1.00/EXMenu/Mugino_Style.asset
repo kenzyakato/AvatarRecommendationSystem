@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Mugino_Style
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Skirt A nonTops
+    icon: {fileID: 2800000, guid: 8b98c3df07510184d81bf60ade7f62ed, type: 3}
+    type: 102
+    parameter:
+      name: Style
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Skirt B
+    icon: {fileID: 2800000, guid: be516aca7c88d2149b9061f6ba333dda, type: 3}
+    type: 102
+    parameter:
+      name: Style
+    value: 2
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Skirt B nonTops
+    icon: {fileID: 2800000, guid: c11502d964cc36745997e57099450428, type: 3}
+    type: 102
+    parameter:
+      name: Style
+    value: 3
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Skirt C
+    icon: {fileID: 2800000, guid: 23ebe45c10722c649bc2f88bb1e1d4cd, type: 3}
+    type: 102
+    parameter:
+      name: Style
+    value: 4
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Swimsuit_ON
+    icon: {fileID: 2800000, guid: 86192c2110037434ba919bf2c000b1cd, type: 3}
+    type: 102
+    parameter:
+      name: Style
+    value: 5
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

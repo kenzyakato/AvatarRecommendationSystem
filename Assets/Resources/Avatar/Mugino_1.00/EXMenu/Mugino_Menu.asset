@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Mugino_Menu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Costume Style
+    icon: {fileID: 2800000, guid: be516aca7c88d2149b9061f6ba333dda, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 114600d1c46036b4d83110e1a41d1357, type: 2}
+    subParameters: []
+    labels: []
+  - name: WearItems
+    icon: {fileID: 0}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 27555994c46b4fd4a96f6bee7005d6a4, type: 2}
+    subParameters: []
+    labels: []
+  - name: Sweat
+    icon: {fileID: 2800000, guid: a6131e84c6b676e4e999bf16a5059c3e, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: f2a3dd082e9810c42856ac7a5019d9ea, type: 2}
+    subParameters: []
+    labels: []
+  - name: Skirt
+    icon: {fileID: 2800000, guid: d51ad37e142ee0b45900597c42343d17, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 0642b38bf803d124f8b0edd3f431c891, type: 2}
+    subParameters: []
+    labels: []
+  - name: HandItem
+    icon: {fileID: 2800000, guid: 70532155452b91149bd82125c362ca6b, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 84633c5419c33e241839da4fccc436e8, type: 2}
+    subParameters: []
+    labels: []
+  - name: Arm(DesktopMode)
+    icon: {fileID: 2800000, guid: 5acca5d9b1a37724880f1a1dc1bc54d3, type: 3}
+    type: 201
+    parameter:
+      name: ArmToggle
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: ArmBlendH
+    - name: ArmBlendV
+    labels:
+    - name: 
+      icon: {fileID: 0}
+    - name: 
+      icon: {fileID: 0}
+    - name: 
+      icon: {fileID: 0}
+    - name: 
+      icon: {fileID: 0}
+  - name: DefaultEmote
+    icon: {fileID: 2800000, guid: af1ba8919b0ccb94a99caf43ac36f97d, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 68340c5057b00c6429dbcd9d87ad48c6, type: 2}
+    subParameters: []
+    labels: []

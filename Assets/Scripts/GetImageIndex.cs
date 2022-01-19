@@ -69,7 +69,7 @@ public class GetImageIndex : MonoBehaviour
     }
     public void Restart()
     {
-        EditorSceneManager.LoadScene("VRScene");
+        EditorSceneManager.LoadScene("VRSceneX");
     }
     public void ChangeButton()
     {
