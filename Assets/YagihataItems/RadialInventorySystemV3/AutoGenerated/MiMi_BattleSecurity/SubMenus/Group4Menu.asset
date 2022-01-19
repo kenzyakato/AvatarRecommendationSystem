@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Group4Menu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: "\u30ED\u30FC\u30D0\u30B9\u30C8"
+    icon: {fileID: 2800000, guid: ad7972be3ce880545b16fd6ec8ba2e13, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G4P0
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30D0\u30C8\u30F3"
+    icon: {fileID: 2800000, guid: 14a1bf21a87988148838f582d5c55959, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G4P1
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30E9\u30A4\u30AA\u30C3\u30C8\u30B7\u30FC\u30EB\u30C9"
+    icon: {fileID: 2800000, guid: 93af7cf31ebb271499c616572ddbb9fc, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G4P2
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30D5\u30A7\u30A4\u30B9\u30E9\u30A4\u30C8"
+    icon: {fileID: 2800000, guid: 82642da66b636234baadb86263afe93c, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G4P3
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30D5\u30E9\u30C3\u30B7\u30E5\u30E9\u30A4\u30C8"
+    icon: {fileID: 2800000, guid: 9a47cf6349aa42f4db51d4fd4a68dc95, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G4P4
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

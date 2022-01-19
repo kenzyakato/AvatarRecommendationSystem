@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Group2Menu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: "\u30B8\u30E3\u30B1\u30C3\u30C8"
+    icon: {fileID: 2800000, guid: 3df616f18d6dddc40b14754838e3d109, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P0
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30ED\u30F3\u30B0\u30B3\u30FC\u30C8"
+    icon: {fileID: 2800000, guid: 033e5542585d90944b5236f4e26f3557, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P1
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30D1\u30F3\u30C4"
+    icon: {fileID: 2800000, guid: 437154c1754581b4eba1b7fe9aec66c1, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P2
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30D7\u30EA\u30FC\u30C4"
+    icon: {fileID: 2800000, guid: c9cdb027fcca86d40b32265186540405, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P3
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30DA\u30D7\u30EA\u30E0"
+    icon: {fileID: 2800000, guid: d3202361c4d8dab4f935facad57ad41f, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P4
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30C1\u30E3\u30A4\u30CA"
+    icon: {fileID: 2800000, guid: 5b6ef3f921780eb4d9144ab652aafc47, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P5
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30B9\u30D1\u30C3\u30C4"
+    icon: {fileID: 2800000, guid: cc87edc2201215946b7a51f996df7fdb, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P6
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u7D20\u8DB3"
+    icon: {fileID: 2800000, guid: 474568b65da43e04cb6eb447c73ab731, type: 3}
+    type: 102
+    parameter:
+      name: RISV3-G2P7
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

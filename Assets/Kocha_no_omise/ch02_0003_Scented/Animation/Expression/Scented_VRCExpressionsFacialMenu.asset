@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Scented_VRCExpressionsFacialMenu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: "\u30C7\u30D5\u30A9\u30EB\u30C8"
+    icon: {fileID: 2800000, guid: 784ffbdeb53a75548bb3527a384f5b56, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 0
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u6012\u308A"
+    icon: {fileID: 2800000, guid: 3b0f325db46c96446ad2f8c8a2aa421f, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u7167\u308C"
+    icon: {fileID: 2800000, guid: af10a33633386174fa07cee38e98b57c, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 2
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30AD\u30EA\u30C3"
+    icon: {fileID: 2800000, guid: 95f778343c2669642af516a267f557c5, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 3
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u54C0\u3057\u307F"
+    icon: {fileID: 2800000, guid: 52aae48f40cde3444898cd45e3181a77, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 4
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u5782\u308C\u76EE"
+    icon: {fileID: 2800000, guid: b375fc489eb8c3b4f833917cc0183b71, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 5
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u304A\u697D\u3057\u307F"
+    icon: {fileID: 2800000, guid: d2d586aa4459d3144bd502250bbde671, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 6
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u7B11\u9854"
+    icon: {fileID: 2800000, guid: 127cebfff88cbee47a944be86608f7c1, type: 3}
+    type: 102
+    parameter:
+      name: Scented_FaceIndex
+    value: 7
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

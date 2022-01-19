@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: GeneratedExpressionParameters
+  m_EditorClassIdentifier: 
+  parameters:
+  - name: VRCEmote
+    valueType: 0
+    saved: 1
+    defaultValue: 0
+  - name: VRCFaceBlendH
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: VRCFaceBlendV
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P0
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P1
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P2
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P3
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P4
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P5
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P6
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G0P7
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P0
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P1
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P2
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P3
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P4
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P5
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P6
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G1P7
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G2P0
+    valueType: 2
+    saved: 1
+    defaultValue: 1
+  - name: RISV3-G2P1
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G2P2
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G2P3
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G2P4
+    valueType: 2
+    saved: 1
+    defaultValue: 1
+  - name: RISV3-G2P5
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G2P6
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G2P7
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G3P0
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G3P1
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G3P2
+    valueType: 2
+    saved: 1
+    defaultValue: 1
+  - name: RISV3-G3P3
+    valueType: 2
+    saved: 1
+    defaultValue: 1
+  - name: RISV3-G3P4
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G3P5
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G3P6
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G4P0
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G4P1
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G4P2
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G4P3
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: RISV3-G4P4
+    valueType: 2
+    saved: 1
+    defaultValue: 0
