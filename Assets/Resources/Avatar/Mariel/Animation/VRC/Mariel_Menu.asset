@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Mariel_Menu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: "\u4E0A\u7740"
+    icon: {fileID: 2800000, guid: 66427b80fb8b0b74b81b49543855b63d, type: 3}
+    type: 102
+    parameter:
+      name: Jacket
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u9774"
+    icon: {fileID: 2800000, guid: 4f728ce18b6342d4487505b682839e50, type: 3}
+    type: 102
+    parameter:
+      name: Shoes
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u9774\u4E0B"
+    icon: {fileID: 2800000, guid: a5b2e2d8526ab4042ab0ddfd63c06c4c, type: 3}
+    type: 102
+    parameter:
+      name: Socks
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u5E3D\u5B50"
+    icon: {fileID: 2800000, guid: 67fcbd8f598b4c84b8f3d068c900e429, type: 3}
+    type: 102
+    parameter:
+      name: Hat
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u4E0B\u7740"
+    icon: {fileID: 2800000, guid: 28581a41494805240a8c7212d0c25c92, type: 3}
+    type: 102
+    parameter:
+      name: Underwear
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

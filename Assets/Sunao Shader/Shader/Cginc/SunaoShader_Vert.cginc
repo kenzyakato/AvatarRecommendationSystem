@@ -8,9 +8,16 @@ VOUT vert (VIN v) {
 
 	VOUT o;
 
+	#ifdef PASS_FA
+		UNITY_INITIALIZE_OUTPUT(VOUT , o);
+	#endif
+
+
 //-------------------------------------頂点座標変換
 	o.pos     = UnityObjectToClipPos(v.vertex);
-	float3 PosW = mul(unity_ObjectToWorld , v.vertex).xyz;
+	o.wpos    = mul(unity_ObjectToWorld , v.vertex).xyz;
+
+	o.vertex  = v.vertex;
 
 //-------------------------------------UV
 	o.uv      = (v.uv * _MainTex_ST.xy) + _MainTex_ST.zw;
@@ -28,7 +35,11 @@ VOUT vert (VIN v) {
 	}
 
 //-------------------------------------法線
-	o.normal  = v.normal;
+	o.normal  = float4(v.normal , 1.0f);
+
+//-------------------------------------タンジェント
+	o.tangent = v.tangent;
+	o.bitan   = cross(UnityObjectToWorldNormal(v.normal) , UnityObjectToWorldDir(v.tangent.xyz)) * v.tangent.w * unity_WorldTransformParams.w;
 
 //-------------------------------------頂点カラー
 	o.color   = (float3)1.0f;
@@ -70,13 +81,10 @@ VOUT vert (VIN v) {
 	o.ldir    = _WorldSpaceLightPos0.xyz;
 
 	#ifdef PASS_FA
-		o.ldir -= PosW;
+		o.ldir -= o.wpos;
 	#endif
 
 	o.ldir    = normalize(o.ldir);
-
-//-------------------------------------カメラ方向
-	o.view    = normalize(_WorldSpaceCameraPos - PosW);
 
 //-------------------------------------SHライト
 	#ifdef PASS_FB
@@ -114,9 +122,9 @@ VOUT vert (VIN v) {
 	#ifdef PASS_FB
 		#if defined(UNITY_SHOULD_SAMPLE_SH) && defined(VERTEXLIGHT_ON)
 
-			o.vldirX  = unity_4LightPosX0 - PosW.x;
-			o.vldirY  = unity_4LightPosY0 - PosW.y;
-			o.vldirZ  = unity_4LightPosZ0 - PosW.z;
+			o.vldirX  = unity_4LightPosX0 - o.wpos.x;
+			o.vldirY  = unity_4LightPosY0 - o.wpos.y;
+			o.vldirZ  = unity_4LightPosZ0 - o.wpos.z;
 
 			float4 VLLength = VLightLength(o.vldirX , o.vldirY , o.vldirZ);
 			o.vlcorr  = rsqrt(VLLength);
@@ -166,8 +174,7 @@ VOUT vert (VIN v) {
 	}
 
 //-------------------------------------視差エミッション
-	TANGENT_SPACE_ROTATION;
-	o.pview   = mul(rotation, ObjSpaceViewDir(v.vertex)).xzy;
+	o.pview   = mul(float3x3(o.tangent.xyz, o.bitan, v.normal) , ObjSpaceViewDir(o.vertex)).xzy;
 
 //-------------------------------------視差エミッションUV
 	o.peuv.xy = MixingTransformTex(v.uv , _MainTex_ST , _ParallaxMap_ST     );
@@ -202,19 +209,16 @@ VOUT vert (VIN v) {
 		o.peprm.x  = EmissionWave(_ParallaxWaveform , _ParallaxBlink , _ParallaxFrequency , _ParallaxPhaseOfs);
 	}
 
-//-------------------------------------タンジェント
-	o.tangent = v.tangent;
-	o.tanW    = UnityObjectToWorldDir(v.tangent.xyz);
-	o.tanB    = cross(UnityObjectToWorldNormal(v.normal) , o.tanW) * v.tangent.w * unity_WorldTransformParams.w;
-
-//-------------------------------------MatCap
-	float3 MatCam = normalize(UNITY_MATRIX_V[1].xyz);
-	o.matcapv = normalize(MatCam - o.view * dot(o.view, MatCam));
-	o.matcaph = normalize(cross(o.view , o.matcapv));
+//-------------------------------------カメラ前方向
+	float3 Matrix_V  = UNITY_MATRIX_V[1].xyz;
+	float3 CamRotY   = abs(UNITY_MATRIX_V._m21);
+	       CamRotY  *= CamRotY * CamRotY;
+	       Matrix_V  = lerp(float3(0.0f , 1.0f , 0.0f) , Matrix_V , CamRotY);
+	o.vfront  = normalize(Matrix_V);
 
 //-------------------------------------ポイントライト
 	#ifdef PASS_FA
-		TRANSFER_VERTEX_TO_FRAGMENT(o);
+		UNITY_TRANSFER_LIGHTING(o , v.uv1);
 	#endif
 
 //-------------------------------------フォグ

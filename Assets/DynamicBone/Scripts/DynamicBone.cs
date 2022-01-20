@@ -551,7 +551,9 @@ public class DynamicBone : MonoBehaviour
                 {
                     DynamicBoneColliderBase c = m_Colliders[j];
                     if (c != null && c.enabled)                    
-                        p.m_isCollide |= c.Collide(ref p.m_Position, particleRadius);                    
+                        p.m_isCollide |= c.Collide(ref p.m_Position, particleRadius);
+                        
+                        
                 }
             }
 

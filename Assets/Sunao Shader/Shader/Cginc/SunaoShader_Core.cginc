@@ -23,6 +23,14 @@
 	uniform float4    _BumpMap_ST;
 	UNITY_DECLARE_TEX2D_NOSAMPLER(_OcclusionMap);
 	UNITY_DECLARE_TEX2D_NOSAMPLER(_AlphaMask);
+	UNITY_DECLARE_TEX2D_NOSAMPLER(_SubTex);
+	uniform float4    _SubTex_ST;
+	uniform float4    _SubTex_TexelSize;
+	uniform float4    _SubColor;
+	uniform bool      _SubTexEnable;
+	uniform float     _SubTexBlend;
+	uniform uint      _SubTexBlendMode;
+	uniform uint      _SubTexCulling;
 	uniform float     _Bright;
 	uniform float     _BumpScale;
 	uniform float     _OcclusionStrength;
@@ -46,6 +54,8 @@
 	uniform float     _DecalRotation;
 	uniform uint      _DecalMode;
 	uniform uint      _DecalMirror;
+	uniform float     _DecalEmission;
+	uniform float     _DecalBright;
 	uniform float     _DecalScrollX;
 	uniform float     _DecalScrollY;
 	uniform float     _DecalAnimation;
@@ -66,6 +76,16 @@
 	uniform float     _LightBoost;
 	uniform float     _Unlit;
 	uniform bool      _MonochromeLit;
+
+//----Outline
+	uniform bool      _OutLineEnable;
+	uniform sampler2D _OutLineMask;
+	uniform float4    _OutLineColor;
+	uniform float     _OutLineSize;
+	UNITY_DECLARE_TEX2D_NOSAMPLER(_OutLineTexture);
+	uniform bool      _OutLineLighthing;
+	uniform bool      _OutLineTexColor;
+	uniform bool      _OutLineFixScale;
 
 //----Emission
 	uniform bool      _EmissionEnable;
@@ -148,6 +168,7 @@
 	uniform bool      _IgnoreTexAlphaRL;
 
 //----Other
+	uniform uint      _Culling;
 	uniform float     _DirectionalLight;
 	uniform float     _PointLight;
 	uniform float     _SHLight;
@@ -173,6 +194,7 @@
 struct VIN {
 	float4 vertex  : POSITION;
 	float2 uv      : TEXCOORD;
+	float2 uv1     : TEXCOORD1;
 	float3 normal  : NORMAL;
 	float4 tangent : TANGENT;
 	float3 color   : COLOR;
@@ -183,43 +205,42 @@ struct VIN {
 
 struct VOUT {
 
-	float4 pos     : SV_POSITION;
-	float2 uv      : TEXCOORD0;
-	float4 uvanm   : TEXCOORD1;
-	float4 decal   : TEXCOORD2;
-	float4 decal2  : TEXCOORD3;
-	float4 decanm  : TEXCOORD4;
-	float3 normal  : NORMAL;
-	float3 color   : COLOR0;
-	float4 tangent : TANGENT;
-	float3 ldir    : LIGHTDIR0;
-	float3 view    : TEXCOORD5;
-	float4 toon    : TEXCOORD6;
-	float3 tanW    : TEXCOORD7;
-	float3 tanB    : TEXCOORD8;
-	float3 matcapv : TEXCOORD9;
-	float3 matcaph : TEXCOORD10;
-	float4 euv     : TEXCOORD11;
-	float3 eprm    : TEXCOORD12;
-	float4 peuv    : TEXCOORD13;
-	float2 pduv    : TEXCOORD14;
-	float3 peprm   : TEXCOORD15;
-	float3 pview   : TEXCOORD16;
+	nointerpolation float4 pos     : SV_POSITION;
+	                float4 vertex  : VERTEX;
+	                float3 wpos    : WORLDPOS;
+	                float2 uv      : TEXCOORD0;
+	nointerpolation float4 uvanm   : TEXANIM;
+	                float4 decal   : DECAL0;
+	                float4 decal2  : DECAL1;
+	nointerpolation float4 decanm  : DECAL2;
+	                float4 normal  : NORMAL;
+	                float3 color   : COLOR0;
+	                float4 tangent : TANGENT0;
+	                float3 bitan   : TANGENT1;
+	                float3 ldir    : LIGHT0;
+	nointerpolation float4 toon    : TOON;
+	nointerpolation float3 vfront  : VFRONT;
+	                float4 euv     : EMISSION0;
+	nointerpolation float3 eprm    : EMISSION1;
+	                float4 peuv    : EMISSION2;
+	                float2 pduv    : EMISSION3;
+	nointerpolation float3 peprm   : EMISSION4;
+	                float3 pview   : EMISSION5;
 
 	#ifdef PASS_FB
-		float3 shdir   : LIGHTDIR1;
-		float3 shmax   : COLOR1;
-		float3 shmin   : COLOR2;
-		float4 vldirX  : LIGHTDIR2;
-		float4 vldirY  : LIGHTDIR3;
-		float4 vldirZ  : LIGHTDIR4;
-		float4 vlcorr  : TEXCOORD17;
-		float4 vlatn   : TEXCOORD18;
+		nointerpolation float3 shdir   : LIGHT1;
+		nointerpolation float3 shmax   : COLOR1;
+		nointerpolation float3 shmin   : COLOR2;
+		                float4 vldirX  : LIGHT2;
+		                float4 vldirY  : LIGHT3;
+		                float4 vldirZ  : LIGHT4;
+		                float4 vlcorr  : LIGHT5;
+		                float4 vlatn   : LIGHT6;
 	#endif
 
-	UNITY_FOG_COORDS(19)
+	UNITY_FOG_COORDS(1)
 	#ifdef PASS_FA
-		LIGHTING_COORDS(20 , 21)
+		UNITY_LIGHTING_COORDS(2 , 3)
 	#endif
 
 };
@@ -228,6 +249,11 @@ struct VOUT {
 //-------------------------------------頂点シェーダ
 
 	#include "SunaoShader_Vert.cginc"
+
+
+//-------------------------------------ジオメトリシェーダ
+
+	#include "SunaoShader_Geom.cginc"
 
 
 //-------------------------------------フラグメントシェーダ

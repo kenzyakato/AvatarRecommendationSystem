@@ -30,7 +30,7 @@ def reset():
 
 	#print("[INFO] loading images and labels...")
 
-	for i in range(18):#获取所有标签和向量位数
+	for i in range(27):#获取所有标签和向量位数
 		f = open (labelpath+str(i)+'.txt','r',encoding="utf-8")
 		i = i + 1
 		lines = f.readlines()
@@ -47,7 +47,7 @@ def reset():
 	#print(vectorindex)
 	#print(labelvector)
 	i=0
-	for i in range(18):#储存每一个图片和对应向量
+	for i in range(27):#储存每一个图片和对应向量
 		label=labelvector.copy()
 		f = open (labelpath+str(i)+'.txt','r',encoding="utf-8")
 		

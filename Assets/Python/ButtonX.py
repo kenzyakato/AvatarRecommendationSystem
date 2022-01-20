@@ -63,7 +63,7 @@ def reset():
 		print(i)
 	print(allLabels)
 	'''
-	for i in range(19):#获取所有标签和向量位数 1419
+	for i in range(27):#获取所有标签和向量位数 1419
 		f = open (labelpath+str(i)+'.txt','r',encoding="utf-8")#,encoding="utf-8"
 		i = i + 1
 		lines = f.readlines()
@@ -81,7 +81,7 @@ def reset():
 	image_list=[]
 	while len(image_list)<16:
 		for i in range(16):
-			imageN=random.randint(0,19)
+			imageN=random.randint(0,27)
 			#if str(imageN)+".jpg" not in image_list:
 			#	image_list.append(str(imageN)+".jpg")
 			if str(imageN) not in image_list:

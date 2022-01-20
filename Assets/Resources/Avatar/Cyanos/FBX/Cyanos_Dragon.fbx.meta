@@ -1,0 +1,711 @@
+fileFormatVersion: 2
+guid: ea3df4e4f7de10d44aadefaee90b4039
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: Dragon_Head
+  - first:
+      1: 100004
+    second: Dragon_Hips
+  - first:
+      1: 100006
+    second: Dragon_Jaw
+  - first:
+      1: 100008
+    second: Dragon_Left_Arm
+  - first:
+      1: 100010
+    second: Dragon_Left_Eye
+  - first:
+      1: 100012
+    second: Dragon_Left_Finger_00
+  - first:
+      1: 100014
+    second: Dragon_Left_Finger_01
+  - first:
+      1: 100016
+    second: Dragon_Left_Finger_02
+  - first:
+      1: 100018
+    second: Dragon_Left_Foot
+  - first:
+      1: 100020
+    second: Dragon_Left_ForeArm
+  - first:
+      1: 100022
+    second: Dragon_Left_Hand
+  - first:
+      1: 100024
+    second: Dragon_Left_LowerLeg
+  - first:
+      1: 100026
+    second: Dragon_Left_Toe_00
+  - first:
+      1: 100028
+    second: Dragon_Left_Toe_01
+  - first:
+      1: 100030
+    second: Dragon_Left_Toe_02
+  - first:
+      1: 100032
+    second: Dragon_Left_UpperLeg
+  - first:
+      1: 100034
+    second: Dragon_Left_Wing_00
+  - first:
+      1: 100036
+    second: Dragon_Left_Wing_01
+  - first:
+      1: 100038
+    second: Dragon_Left_Wing_02
+  - first:
+      1: 100040
+    second: Dragon_Left_Wing_03
+  - first:
+      1: 100042
+    second: Dragon_Left_Wing_04
+  - first:
+      1: 100044
+    second: Dragon_Left_Wing_05
+  - first:
+      1: 100046
+    second: Dragon_Left_Wing_06
+  - first:
+      1: 100048
+    second: Dragon_Left_Wing_07
+  - first:
+      1: 100050
+    second: Dragon_Neck
+  - first:
+      1: 100052
+    second: Dragon_Right_Arm
+  - first:
+      1: 100054
+    second: Dragon_Right_Eye
+  - first:
+      1: 100056
+    second: Dragon_Right_Finger_00
+  - first:
+      1: 100058
+    second: Dragon_Right_Finger_01
+  - first:
+      1: 100060
+    second: Dragon_Right_Finger_02
+  - first:
+      1: 100062
+    second: Dragon_Right_Foot
+  - first:
+      1: 100064
+    second: Dragon_Right_ForeArm
+  - first:
+      1: 100066
+    second: Dragon_Right_Hand
+  - first:
+      1: 100068
+    second: Dragon_Right_LowerLeg
+  - first:
+      1: 100070
+    second: Dragon_Right_Toe_00
+  - first:
+      1: 100072
+    second: Dragon_Right_Toe_01
+  - first:
+      1: 100074
+    second: Dragon_Right_Toe_02
+  - first:
+      1: 100076
+    second: Dragon_Right_UpperLeg
+  - first:
+      1: 100078
+    second: Dragon_Right_Wing_00
+  - first:
+      1: 100080
+    second: Dragon_Right_Wing_01
+  - first:
+      1: 100082
+    second: Dragon_Right_Wing_02
+  - first:
+      1: 100084
+    second: Dragon_Right_Wing_03
+  - first:
+      1: 100086
+    second: Dragon_Right_Wing_04
+  - first:
+      1: 100088
+    second: Dragon_Right_Wing_05
+  - first:
+      1: 100090
+    second: Dragon_Right_Wing_06
+  - first:
+      1: 100092
+    second: Dragon_Right_Wing_07
+  - first:
+      1: 100094
+    second: Dragon_Spine
+  - first:
+      1: 100096
+    second: Dragon_Tail_00
+  - first:
+      1: 100098
+    second: Dragon_Tail_01
+  - first:
+      1: 100100
+    second: Dragon_Tail_02
+  - first:
+      1: 100102
+    second: Dragon_Tongue_00
+  - first:
+      1: 100104
+    second: M_Dragon
+  - first:
+      1: 100106
+    second: //RootNode
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: Dragon_Head
+  - first:
+      4: 400004
+    second: Dragon_Hips
+  - first:
+      4: 400006
+    second: Dragon_Jaw
+  - first:
+      4: 400008
+    second: Dragon_Left_Arm
+  - first:
+      4: 400010
+    second: Dragon_Left_Eye
+  - first:
+      4: 400012
+    second: Dragon_Left_Finger_00
+  - first:
+      4: 400014
+    second: Dragon_Left_Finger_01
+  - first:
+      4: 400016
+    second: Dragon_Left_Finger_02
+  - first:
+      4: 400018
+    second: Dragon_Left_Foot
+  - first:
+      4: 400020
+    second: Dragon_Left_ForeArm
+  - first:
+      4: 400022
+    second: Dragon_Left_Hand
+  - first:
+      4: 400024
+    second: Dragon_Left_LowerLeg
+  - first:
+      4: 400026
+    second: Dragon_Left_Toe_00
+  - first:
+      4: 400028
+    second: Dragon_Left_Toe_01
+  - first:
+      4: 400030
+    second: Dragon_Left_Toe_02
+  - first:
+      4: 400032
+    second: Dragon_Left_UpperLeg
+  - first:
+      4: 400034
+    second: Dragon_Left_Wing_00
+  - first:
+      4: 400036
+    second: Dragon_Left_Wing_01
+  - first:
+      4: 400038
+    second: Dragon_Left_Wing_02
+  - first:
+      4: 400040
+    second: Dragon_Left_Wing_03
+  - first:
+      4: 400042
+    second: Dragon_Left_Wing_04
+  - first:
+      4: 400044
+    second: Dragon_Left_Wing_05
+  - first:
+      4: 400046
+    second: Dragon_Left_Wing_06
+  - first:
+      4: 400048
+    second: Dragon_Left_Wing_07
+  - first:
+      4: 400050
+    second: Dragon_Neck
+  - first:
+      4: 400052
+    second: Dragon_Right_Arm
+  - first:
+      4: 400054
+    second: Dragon_Right_Eye
+  - first:
+      4: 400056
+    second: Dragon_Right_Finger_00
+  - first:
+      4: 400058
+    second: Dragon_Right_Finger_01
+  - first:
+      4: 400060
+    second: Dragon_Right_Finger_02
+  - first:
+      4: 400062
+    second: Dragon_Right_Foot
+  - first:
+      4: 400064
+    second: Dragon_Right_ForeArm
+  - first:
+      4: 400066
+    second: Dragon_Right_Hand
+  - first:
+      4: 400068
+    second: Dragon_Right_LowerLeg
+  - first:
+      4: 400070
+    second: Dragon_Right_Toe_00
+  - first:
+      4: 400072
+    second: Dragon_Right_Toe_01
+  - first:
+      4: 400074
+    second: Dragon_Right_Toe_02
+  - first:
+      4: 400076
+    second: Dragon_Right_UpperLeg
+  - first:
+      4: 400078
+    second: Dragon_Right_Wing_00
+  - first:
+      4: 400080
+    second: Dragon_Right_Wing_01
+  - first:
+      4: 400082
+    second: Dragon_Right_Wing_02
+  - first:
+      4: 400084
+    second: Dragon_Right_Wing_03
+  - first:
+      4: 400086
+    second: Dragon_Right_Wing_04
+  - first:
+      4: 400088
+    second: Dragon_Right_Wing_05
+  - first:
+      4: 400090
+    second: Dragon_Right_Wing_06
+  - first:
+      4: 400092
+    second: Dragon_Right_Wing_07
+  - first:
+      4: 400094
+    second: Dragon_Spine
+  - first:
+      4: 400096
+    second: Dragon_Tail_00
+  - first:
+      4: 400098
+    second: Dragon_Tail_01
+  - first:
+      4: 400100
+    second: Dragon_Tail_02
+  - first:
+      4: 400102
+    second: Dragon_Tongue_00
+  - first:
+      4: 400104
+    second: M_Dragon
+  - first:
+      4: 400106
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: mt_dragon
+  - first:
+      43: 4300000
+    second: M_Dragon
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: M_Dragon
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_dragon
+    second: {fileID: 2100000, guid: 2ff8c09eeea66a8408667ef10e4a6c71, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 2
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Cyanos_Dragon(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: Cyanos_Dragon(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Hips
+      parentName: Armature
+      position: {x: -9.094947e-15, y: 0.17879277, z: -0.075400345}
+      rotation: {x: -0.5000002, y: 0.5000002, z: -0.49999985, w: 0.49999985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Spine
+      parentName: Dragon_Hips
+      position: {x: -0.113007635, y: -0.008761291, z: 0}
+      rotation: {x: -0.00000004470348, y: -0.000000014901159, z: -0.23937018, w: 0.97092843}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Arm
+      parentName: Dragon_Spine
+      position: {x: -0.037646413, y: -0.04870962, z: -0.075643346}
+      rotation: {x: -0.23731959, y: -0.66608703, z: -0.2916965, w: 0.6441434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_ForeArm
+      parentName: Dragon_Left_Arm
+      position: {x: -0.11158424, y: -0.0000050662, z: -0.0000018148021}
+      rotation: {x: -0.000007867811, y: -0.0000075399857, z: 0.08272589, w: 0.9965724}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Hand
+      parentName: Dragon_Left_ForeArm
+      position: {x: -0.108037785, y: 0.00000037737314, z: 5.7909233e-15}
+      rotation: {x: 0.0034702576, y: -0.07948624, z: -0.282169, w: 0.9560599}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Finger_01
+      parentName: Dragon_Left_Hand
+      position: {x: -0.036408864, y: 0, z: 4.9872852e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Finger_02
+      parentName: Dragon_Left_Hand
+      position: {x: -0.036408864, y: 0.03335658, z: 5.7211214e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Finger_00
+      parentName: Dragon_Left_Hand
+      position: {x: -0.036408864, y: -0.035025444, z: -4.984946e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_00
+      parentName: Dragon_Spine
+      position: {x: -0.07559101, y: 0.0797903, z: 0.0599437}
+      rotation: {x: 0.77384156, y: 0.5772252, z: 0.251461, w: -0.06890429}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_01
+      parentName: Dragon_Right_Wing_00
+      position: {x: 0.14662421, y: 0.00000044431928, z: -0.00000032303006}
+      rotation: {x: 0, y: -0, z: -0.36076465, w: 0.93265694}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_02
+      parentName: Dragon_Right_Wing_01
+      position: {x: 0.13071032, y: -0.00000015137522, z: -0.000000036969197}
+      rotation: {x: 0, y: -0, z: -0.33380687, w: 0.9426415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_03
+      parentName: Dragon_Right_Wing_02
+      position: {x: 0.12411145, y: -0.0000006084529, z: 0.0000006746406}
+      rotation: {x: 0, y: 0, z: 0.9304176, w: 0.3665012}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_05
+      parentName: Dragon_Right_Wing_03
+      position: {x: 0.022646155, y: -0.036882825, z: -0.00000011028322}
+      rotation: {x: 0, y: -0, z: -0.2419219, w: 0.9702957}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_06
+      parentName: Dragon_Right_Wing_05
+      position: {x: 0.250881, y: 0.0000005804535, z: -0.0000004540343}
+      rotation: {x: 0, y: 0, z: 0.21643962, w: 0.976296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_04
+      parentName: Dragon_Right_Wing_03
+      position: {x: 0.041914687, y: -0.00000012452807, z: -0.0000006001061}
+      rotation: {x: 0, y: -0, z: -0.061048545, w: 0.99813485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Wing_07
+      parentName: Dragon_Right_Wing_04
+      position: {x: 0.23467402, y: -0.0000002067363, z: -0.000000039276294}
+      rotation: {x: 0, y: 0, z: 0.25038, w: 0.96814764}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Arm
+      parentName: Dragon_Spine
+      position: {x: -0.03764654, y: -0.048709553, z: 0.0756433}
+      rotation: {x: 0.6660871, y: -0.2373194, z: 0.6441434, w: 0.29169652}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_ForeArm
+      parentName: Dragon_Right_Arm
+      position: {x: 0.111584306, y: 0.0000051100933, z: 0.0000018218678}
+      rotation: {x: -0.000007957217, y: -0.000007595864, z: 0.082726106, w: 0.9965723}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Hand
+      parentName: Dragon_Right_ForeArm
+      position: {x: 0.10803812, y: -0.00000037429749, z: 1.22568615e-14}
+      rotation: {x: -0.004499841, y: 0.10306794, z: 0.26995394, w: 0.95733047}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Finger_02
+      parentName: Dragon_Right_Hand
+      position: {x: 0.036408994, y: -0.0333566, z: 0.0000000011993196}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Finger_01
+      parentName: Dragon_Right_Hand
+      position: {x: 0.036408994, y: 1.7763568e-17, z: 1.0454837e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Finger_00
+      parentName: Dragon_Right_Hand
+      position: {x: 0.036408994, y: 0.035025597, z: -0.0000000010449998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_00
+      parentName: Dragon_Spine
+      position: {x: -0.07559098, y: 0.07979021, z: -0.05994371}
+      rotation: {x: -0.5772252, y: 0.77384156, z: -0.06890429, w: -0.251461}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_01
+      parentName: Dragon_Left_Wing_00
+      position: {x: -0.14662431, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.36076465, w: 0.93265694}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_02
+      parentName: Dragon_Left_Wing_01
+      position: {x: -0.13070962, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.33380687, w: 0.9426415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_03
+      parentName: Dragon_Left_Wing_02
+      position: {x: -0.12411183, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9304176, w: 0.3665012}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_05
+      parentName: Dragon_Left_Wing_03
+      position: {x: -0.022646626, y: 0.036882307, z: 0}
+      rotation: {x: 0, y: -0, z: -0.2419219, w: 0.9702957}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_06
+      parentName: Dragon_Left_Wing_05
+      position: {x: -0.25088, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.21643962, w: 0.976296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_04
+      parentName: Dragon_Left_Wing_03
+      position: {x: -0.041913968, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.061048545, w: 0.99813485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Wing_07
+      parentName: Dragon_Left_Wing_04
+      position: {x: -0.23467489, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.25038, w: 0.96814764}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Neck
+      parentName: Dragon_Spine
+      position: {x: -0.1433946, y: -0.000000020561192, z: 0}
+      rotation: {x: 0.000000021877968, y: 0.000000035949267, z: 0.0030203308, w: 0.99999547}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Head
+      parentName: Dragon_Neck
+      position: {x: -0.17669334, y: 0.000000010740976, z: 8.360337e-17}
+      rotation: {x: 0, y: 0, z: 0.5826524, w: 0.8127215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Eye
+      parentName: Dragon_Head
+      position: {x: -0.066, y: 0.035, z: 0.0018956263}
+      rotation: {x: -0.36564186, y: 0.3194466, z: -0.579, w: 0.6549953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Eye
+      parentName: Dragon_Head
+      position: {x: -0.066, y: 0.035, z: -0.0018956263}
+      rotation: {x: 0.36564186, y: -0.3194466, z: -0.579, w: 0.6549953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Jaw
+      parentName: Dragon_Head
+      position: {x: -0.033974107, y: -0.032138593, z: 0}
+      rotation: {x: 0, y: 0, z: 0.13422923, w: 0.99095035}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Tongue_00
+      parentName: Dragon_Jaw
+      position: {x: -0.015, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.09584575, w: 0.9953962}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_UpperLeg
+      parentName: Dragon_Hips
+      position: {x: 0.0045616482, y: -0.06028286, z: 0.110667996}
+      rotation: {x: -0.9647976, y: 0.075654626, z: -0.025076613, w: -0.25062567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_LowerLeg
+      parentName: Dragon_Right_UpperLeg
+      position: {x: 0.14683273, y: 0.000007606935, z: 0.0000069988378}
+      rotation: {x: 0.121083215, y: 0.021598836, z: -0.27057564, w: 0.9548095}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Foot
+      parentName: Dragon_Right_LowerLeg
+      position: {x: 0.13466445, y: -0.00000010728059, z: 0.000000008026623}
+      rotation: {x: 0.036390267, y: -0.12650086, z: 0.99096894, w: -0.025573116}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Toe_00
+      parentName: Dragon_Right_Foot
+      position: {x: 0.10515269, y: -0.0066917217, z: 0.039515197}
+      rotation: {x: 0.03015369, y: -0.17101008, z: 0.17101008, w: 0.9698463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Toe_02
+      parentName: Dragon_Right_Foot
+      position: {x: 0.10515269, y: -0.0066917264, z: -0.039516}
+      rotation: {x: -0.03015369, y: 0.17101008, z: 0.17101008, w: 0.9698463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Right_Toe_01
+      parentName: Dragon_Right_Foot
+      position: {x: 0.10836588, y: -0.0055222204, z: -6.538549e-11}
+      rotation: {x: 5.715968e-25, y: -1.7075422e-16, z: 0.1736482, w: 0.9848078}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Tail_00
+      parentName: Dragon_Hips
+      position: {x: 0.13270877, y: -0.01393344, z: 0}
+      rotation: {x: 0.0043633096, y: 0.9999905, z: -6.096459e-17, w: -6.149894e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Tail_01
+      parentName: Dragon_Tail_00
+      position: {x: -0.14897284, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Tail_02
+      parentName: Dragon_Tail_01
+      position: {x: -0.15976122, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_UpperLeg
+      parentName: Dragon_Hips
+      position: {x: 0.00456161, y: -0.06028242, z: -0.11066776}
+      rotation: {x: 0.07565997, y: 0.96479666, z: 0.2506278, w: -0.025073733}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_LowerLeg
+      parentName: Dragon_Left_UpperLeg
+      position: {x: -0.14683309, y: -0.000006364887, z: -0.000005773825}
+      rotation: {x: 0.12108405, y: 0.021602144, z: -0.27058, w: 0.95480806}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Foot
+      parentName: Dragon_Left_LowerLeg
+      position: {x: -0.13466446, y: 0.00000021148163, z: -0.000000007023304}
+      rotation: {x: 0.0363911, y: -0.12650143, z: 0.9909688, w: -0.025572734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Toe_02
+      parentName: Dragon_Left_Foot
+      position: {x: -0.10515272, y: 0.0066917166, z: 0.039515425}
+      rotation: {x: -0.03015369, y: 0.17101008, z: 0.17101008, w: 0.9698463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Toe_01
+      parentName: Dragon_Left_Foot
+      position: {x: -0.10836592, y: 0.0055222055, z: 0.00000000545555}
+      rotation: {x: -3.1452874e-15, y: 1.6473917e-14, z: 0.1736482, w: 0.9848078}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dragon_Left_Toe_00
+      parentName: Dragon_Left_Foot
+      position: {x: -0.105152726, y: 0.0066917143, z: -0.039515432}
+      rotation: {x: 0.03015369, y: -0.17101008, z: 0.17101008, w: 0.9698463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: M_Dragon
+      parentName: Cyanos_Dragon(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

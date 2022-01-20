@@ -1,5 +1,5 @@
 ﻿//--------------------------------------------------------------
-//              Sunao Shader    Ver 1.4.2
+//              Sunao Shader    Ver 1.5.1
 //
 //                      Copyright (c) 2021 揚茄子研究所
 //                              Twitter : @SUNAO_VRC
@@ -26,6 +26,15 @@ Shader "Sunao Shader/Transparent" {
 		_OcclusionMap      ("Occlusion"                 , 2D) = "white" {}
 		[NoScaleOffset]
 		_AlphaMask         ("Alpha Mask"                , 2D) = "white" {}
+
+		_SubTex            ("Sub Texture"               , 2D) = "black" {}
+		_SubColor          ("Sub Color"                 , Color) = (1,1,1,1)
+		_SubTexEnable      ("Enable Sub Texture"        , int) = 0
+		_SubTexBlend       ("Sub Texture Blending"      , Range( 0.0,  1.0)) = 0.5
+		[Enum(Override , 0 , Multiply , 1 , Add , 2 , Minus , 3)]
+		_SubTexBlendMode   ("Sub Texture Blend Mode"    , int) = 0
+		[Enum(Both , 0 , Front , 1 , Back , 2)]
+		_SubTexCulling     ("Sub Texture Assign"        , int) = 0
 
 		_Bright            ("Brightness"                , Range( 0.0,  1.0)) = 1.0
 		_BumpScale         ("Normal Map Scale"          , Range(-2.0,  2.0)) = 1.0
@@ -55,10 +64,13 @@ Shader "Sunao Shader/Transparent" {
 		_DecalSizeY        ("Size Y"                    , Range( 0.0, 1.0)) = 0.5
 		_DecalRotation     ("Rotation"                  , Range(-180.0, 180.0)) = 0.0
 
-		[Enum(Override , 0 , Add , 1 , Multiply , 2 , Multiply(Mono) , 3)]
+		[Enum(Override , 0 , Add , 1 , Multiply , 2 , Multiply(Mono) , 3 , Emissive(Add) , 4 , Emissive(Override) , 5)]
 		_DecalMode         ("Decal Mode"                , int) = 0
 		[Enum(Normal , 0 , Fixed , 1 , Mirror1 , 2 , Mirror2 , 3 , Copy(Mirror) , 4 , Copy(Fixed) , 5)]
 		_DecalMirror       ("Decal Mirror Mode"         , int) = 0
+
+		_DecalBright       ("Brightness Offset"         , Range( -1.0,  1.0)) = 0.0
+		_DecalEmission     ("Emission Intensity"        , Range(  0.0, 10.0)) = 1.0
 
 		_DecalScrollX      ("Scroll X"                  , Range(-10.0, 10.0)) = 0.0
 		_DecalScrollY      ("Scroll Y"                  , Range(-10.0, 10.0)) = 0.0
@@ -233,7 +245,7 @@ Shader "Sunao Shader/Transparent" {
 		_SHLight           ("SH Light"                  , Range( 0.0,  2.0)) = 1.0
 		_PointLight        ("Point Light"               , Range( 0.0,  2.0)) = 1.0
 		[SToggle]
-		_LightLimitter     ("Light Limitter"            , int) = 1
+		_LightLimitter     ("Light Limiter"             , int) = 1
 		_MinimumLight      ("Minimum Light Limit"       , Range( 0.0,  1.0)) = 0.0
 		[Enum(Add , 0 , Max , 4)]
 		_BlendOperation    ("ForwardAdd Blend Mode"     , int) = 4
@@ -250,7 +262,7 @@ Shader "Sunao Shader/Transparent" {
 		_BlightOffset      ("Brightness Offset"         , Range(-5.0,  5.0)) = 0.0
 
 		[SToggle]
-		_LimitterEnable    ("Enable Limitter"           , int) = 0
+		_LimitterEnable    ("Enable Limiter"            , int) = 0
 		_LimitterMax       ("Limitter Max"              , Range( 0.0,  5.0)) = 1.0
 
 
@@ -267,8 +279,8 @@ Shader "Sunao Shader/Transparent" {
 		[HideInInspector] _SunaoShaderType ("ShaderType"        , int) = 1
 
 		[HideInInspector] _VersionH        ("Version H"         , int) = 1
-		[HideInInspector] _VersionM        ("Version M"         , int) = 4
-		[HideInInspector] _VersionL        ("Version L"         , int) = 2
+		[HideInInspector] _VersionM        ("Version M"         , int) = 5
+		[HideInInspector] _VersionL        ("Version L"         , int) = 1
 
 	}
 
@@ -279,9 +291,11 @@ Shader "Sunao Shader/Transparent" {
 		LOD 0
 
 		Tags {
-			"IgnoreProjector" = "True"
+			"IgnoreProjector" = "False"
 			"RenderType"      = "Transparent"
-			"Queue"           = "Transparent"
+			"Queue"           = "Transparent-1"
+			"VRCFallback"     = "ToonTransparent"
+			"VRCFallback"     = "ToonFade"
 		}
 
 		Pass {
@@ -289,46 +303,24 @@ Shader "Sunao Shader/Transparent" {
 				"LightMode"  = "ForwardBase"
 			}
 
-			Cull [_Culling]
 			Blend SrcAlpha OneMinusSrcAlpha
 			ZWrite [_EnableZWrite]
 
 			CGPROGRAM
 			#pragma vertex vert
+			#pragma geometry geom
 			#pragma fragment frag
 			#pragma multi_compile_fwdbase
 			#pragma multi_compile_fog
-			#pragma target 4.5
+			#pragma target 4.6
+			#pragma only_renderers d3d11
 
 			#define PASS_FB
+			#define SURFACE
+			#define OUTLINE
 			#define TRANSPARENT
 
-			#include "./cginc/SunaoShader_Core.cginc"
-
-			ENDCG
-		}
-
-
-		Pass {
-			Tags {
-				"LightMode"  = "ForwardBase"
-			}
-
-			Cull Front
-			Blend SrcAlpha OneMinusSrcAlpha
-			ZWrite [_EnableZWrite]
-
-			CGPROGRAM
-			#pragma vertex vert
-			#pragma fragment frag
-			#pragma multi_compile_fwdbase
-			#pragma multi_compile_fog
-			#pragma target 4.5
-
-			#define PASS_OL_FB
-			#define TRANSPARENT
-
-			#include "./cginc/SunaoShader_OL.cginc"
+			#include "./Cginc/SunaoShader_Core.cginc"
 
 			ENDCG
 		}
@@ -339,48 +331,25 @@ Shader "Sunao Shader/Transparent" {
 				"LightMode"  = "ForwardAdd"
 			}
 
-			Cull [_Culling]
-			BlendOp [_BlendOperation]
+			BlendOp [_BlendOperation] , Add
 			Blend SrcAlpha One
 			ZWrite Off
 
 			CGPROGRAM
 			#pragma vertex vert
+			#pragma geometry geom
 			#pragma fragment frag
 			#pragma multi_compile_fwdadd
 			#pragma multi_compile_fog
-			#pragma target 4.5
+			#pragma target 4.6
+			#pragma only_renderers d3d11
 
 			#define PASS_FA
+			#define SURFACE
+			#define OUTLINE
 			#define TRANSPARENT
 
-			#include "./cginc/SunaoShader_Core.cginc"
-
-			ENDCG
-		}
-
-
-		Pass {
-			Tags {
-				"LightMode"  = "ForwardAdd"
-			}
-
-			Cull Front
-			BlendOp [_BlendOperation]
-			Blend SrcAlpha One
-			ZWrite Off
-
-			CGPROGRAM
-			#pragma vertex vert
-			#pragma fragment frag
-			#pragma multi_compile_fwdadd
-			#pragma multi_compile_fog
-			#pragma target 4.5
-
-			#define PASS_OL_FA
-			#define TRANSPARENT
-
-			#include "./cginc/SunaoShader_OL.cginc"
+			#include "./Cginc/SunaoShader_Core.cginc"
 
 			ENDCG
 		}
@@ -391,6 +360,7 @@ Shader "Sunao Shader/Transparent" {
 				"LightMode" = "ShadowCaster"
 			}
 
+			Cull [_Culling]
 			ZWrite On
 			ZTest LEqual
 
@@ -398,17 +368,19 @@ Shader "Sunao Shader/Transparent" {
 			#pragma vertex vert
 			#pragma fragment frag
 			#pragma multi_compile_shadowcaster
-			#pragma target 4.5
+			#pragma target 4.6
+			#pragma only_renderers d3d11
 
 			#define PASS_SC
+			#define TRANSPARENT
 
-			#include "./cginc/SunaoShader_SC.cginc"
+			#include "./Cginc/SunaoShader_SC.cginc"
 
 			ENDCG
 		}
 	}
 
-	Fallback "Transparent/Diffuse"
+	FallBack "Unlit/Transparent"
 
 	CustomEditor "SunaoShader.GUI"
 }
