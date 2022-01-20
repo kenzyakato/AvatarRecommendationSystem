@@ -29,7 +29,7 @@ times=0
 
 #print("[INFO] loading images and labels...")
 
-for i in range(27):#获取所有标签和向量位数
+for i in range(34):#获取所有标签和向量位数
 	f = open (labelpath+str(i)+'.txt','r',encoding="utf-8")
 	i = i + 1
 	lines = f.readlines()
@@ -46,7 +46,7 @@ for i in range(27):#获取所有标签和向量位数
 #print(vectorindex)
 #print(labelvector)
 i=0
-for i in range(27):#储存每一个图片和对应向量
+for i in range(34):#储存每一个图片和对应向量
 	label=labelvector.copy()
 	f = open (labelpath+str(i)+'.txt','r',encoding="utf-8")
 		
